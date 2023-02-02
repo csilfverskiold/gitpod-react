@@ -7,7 +7,11 @@ import React from "react";
 // }
 
 // 1. Create functional component (as an arrow function)
-const FunctionalGreetingWithProps = () => <h1>Hello</h1>;
+// 5.1 Pass in greeting prop in function
+const FunctionalGreetingWithProps = (props) => {
+    console.log(props)
+    return <h1>Hello, {props.name} I see you're {props.age} years old; {props.greeting}</h1>;
+};
 
 // 2. Export functional component
 export default FunctionalGreetingWithProps; 
