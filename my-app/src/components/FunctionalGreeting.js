@@ -1,3 +1,5 @@
+// Stateless functional component in React
+
 import React from "react";
 
 

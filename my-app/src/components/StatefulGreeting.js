@@ -1,3 +1,5 @@
+// Stateful class component in React
+
 import React from "react";
 
 // 1.0 Create class component (as a regular class)
