@@ -5,6 +5,8 @@ import FunctionalGreetingWithProps from './components/FunctionalGreetingWithProp
 import StatefulGreeting from './components/StatefulGreeting';
 import EventsClass from './components/EventsClass';
 import EventsFunctional from './components/EventsFunctional';
+import ConditionalRenderingClass from './components/ConditionalRenderingClass';
+import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
 
 // 4. Use functional/class component
 // 5.0 Pass in prop (name, greeting, age) as JSX
@@ -16,6 +18,8 @@ function App() {
       <StatefulGreeting greeting="I'm a stateful class component!" name="Mike!" />
       <EventsClass />
       <EventsFunctional />
+      <ConditionalRenderingClass />
+      <ConditionalRenderingFunctional connected = {true}/>
     </div>
   );
 }
