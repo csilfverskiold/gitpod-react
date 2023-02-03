@@ -9,8 +9,8 @@ export class NestingComponents extends Component {
       super(props)
     
       this.state = {
-         isLoaded: false,
-         isLoggedIn: false,
+         isLoaded: true,
+         isLoggedIn: true,
 
       }
     }
@@ -27,4 +27,9 @@ export class NestingComponents extends Component {
 
 export default NestingComponents
 
-// "Nested Components"
+// "Nested Components - React components should be:
+// 1. Small
+// 2. Simple
+// 3. Isolated
+// 4. Reusable
+// 5. Focused"

@@ -8,6 +8,8 @@ import EventsFunctional from './components/EventsFunctional';
 import ConditionalRenderingClass from './components/ConditionalRenderingClass';
 import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
 import NestingComponents from './components/NestingComponents';
+import MethodsAsPropsChild from './components/MethodsAsPropsChild';
+import MethodsAsPropsParent from './components/MethodsAsPropsParent';
 
 // 4. Use functional/class component
 // 5.0 Pass in prop (name, greeting, age) as JSX
@@ -22,6 +24,8 @@ function App() {
       <ConditionalRenderingClass />
       <ConditionalRenderingFunctional connected = {true}/>
       <NestingComponents />
+      <MethodsAsPropsChild />
+      <MethodsAsPropsParent />
     </div>
   );
 }
