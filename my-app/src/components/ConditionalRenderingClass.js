@@ -12,6 +12,7 @@ export class ConditionalRenderingClass extends Component {
 
       }
     }
+    
     render() {
         return (
             <div>
