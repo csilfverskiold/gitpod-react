@@ -17,7 +17,7 @@ import React from "react";
 //       with === and ? :
 
 // 1.4.2 Continue to add third rule of updating the state, follow supplied the "Updating the State - Cheat Sheet"
-//
+//       Original code repo: https://github.com/Code-Institute-Solutions/react-1-18-49/blob/4329ab8b6d1cc8270eac7a01ceb9856854f99dda/src/components/StatefulGreetingWithCallback.js
 class StatefulGreeting extends React.Component {
 
     constructor(props) {         //Always add contstructor this way
