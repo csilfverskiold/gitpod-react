@@ -10,13 +10,14 @@ import ConditionalRenderingFunctional from './components/ConditionalRenderingFun
 import NestingComponents from './components/NestingComponents';
 import MethodsAsPropsChild from './components/MethodsAsPropsChild';
 import MethodsAsPropsParent from './components/MethodsAsPropsParent';
+import RenderingLists from './components/RenderingLists';
 
 // 4. Use functional/class component
 // 5.0 Pass in prop (name, greeting, age) as JSX
 function App() {
   return (
     <div className="App"> 
-      <FunctionalGreeting />
+      {/* <FunctionalGreeting />
       <FunctionalGreetingWithProps name="Mike!" greeting="Nice to meet you!!" age="32"/>
       <StatefulGreeting greeting="I'm a stateful class component!" name="Mike!" />
       <EventsClass />
@@ -25,7 +26,8 @@ function App() {
       <ConditionalRenderingFunctional connected = {true}/>
       <NestingComponents />
       <MethodsAsPropsChild />
-      <MethodsAsPropsParent />
+      <MethodsAsPropsParent /> */}
+      <RenderingLists />
     </div>
   );
 }
