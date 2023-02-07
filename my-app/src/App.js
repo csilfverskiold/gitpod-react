@@ -11,6 +11,7 @@ import NestingComponents from './components/NestingComponents';
 import MethodsAsPropsChild from './components/MethodsAsPropsChild';
 import MethodsAsPropsParent from './components/MethodsAsPropsParent';
 import RenderingLists from './components/RenderingLists';
+import LifeCyclesCDM from './components/LifeCyclesCDM';
 
 // 4. Use functional/class component
 // 5.0 Pass in prop (name, greeting, age) as JSX
@@ -26,8 +27,9 @@ function App() {
       <ConditionalRenderingFunctional connected = {true}/>
       <NestingComponents />
       <MethodsAsPropsChild />
-      <MethodsAsPropsParent /> */}
-      <RenderingLists />
+      <MethodsAsPropsParent />
+      <RenderingLists /> */}
+      <LifeCyclesCDM />
     </div>
   );
 }
