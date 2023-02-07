@@ -1,3 +1,5 @@
+// Component Life Cycles in React
+// Showcasing componenDidMount
 
 import React, { Component } from 'react'
 

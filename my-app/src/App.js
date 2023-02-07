@@ -12,6 +12,7 @@ import MethodsAsPropsChild from './components/MethodsAsPropsChild';
 import MethodsAsPropsParent from './components/MethodsAsPropsParent';
 import RenderingLists from './components/RenderingLists';
 import LifeCyclesCDM from './components/LifeCyclesCDM';
+import LifeCyclesCDU from './components/LifeCyclesCDU';
 
 // 4. Use functional/class component
 // 5.0 Pass in prop (name, greeting, age) as JSX
@@ -28,8 +29,9 @@ function App() {
       <NestingComponents />
       <MethodsAsPropsChild />
       <MethodsAsPropsParent />
-      <RenderingLists /> */}
-      <LifeCyclesCDM />
+      <RenderingLists />
+      <LifeCyclesCDM /> */}
+      <LifeCyclesCDU />
     </div>
   );
 }
