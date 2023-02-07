@@ -1,5 +1,5 @@
 // Component Life Cycles in React
-// Showcasing componenDidMount
+// Showcasing componenDidUpdate
 
 import React, { Component } from 'react'
 import LifeCyclesCDUChild from './LifeCyclesCDUChild'
