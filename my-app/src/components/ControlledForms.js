@@ -8,7 +8,10 @@ export class ControlledForms extends Component {
         super(props)
 
         this.state = {
-            name: ''
+            name: '',
+            category: 'website',
+            comments: '',
+
         }
     }
 
@@ -18,12 +21,51 @@ export class ControlledForms extends Component {
         })
     }
 
+    handleCategoryChange = (event) => {
+        this.setState({
+            category: event.target.value
+        })
+    }
+
+    handleCommentsChange = (event) => {
+        this.setState({
+            comments: event.target.value
+        })
+    }
+
+    // "Just like the other handlers, it will be an arrow  function that takes the event as a parameter.  
+    // Inside it, the first thing I’m going to do is call  event.preventDeafult();, which will prevent the  
+    // default behavior of the form, which is to submit  the data in a GET request and refresh the page.  
+    // Below this, we can take any action we want. For  demonstration purposes I’m just going to log a  
+    // message to the console that contains the form  data, which is now maintained in the state." 
+    handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(this.state)
+    }
+
+
     render() {
         return (
             <div>
-                <form>
-                    <label htmlFor="id-name">Your name: </label>
-                    <input value={this.state.name} onChange={this.handleNameChange} id="id-name" name="name" type="text" />
+                <h2>Please fill out the form below: </h2>
+                <form onSubmit={this.handleSubmit}>
+                    <div>
+                        <label htmlFor="id-name">Your name: </label>
+                        <input value={this.state.name} onChange={this.handleNameChange} id="id-name" name="name" type="text" />
+                    </div>
+
+                    <div>
+                    <label htmlFor="id-category">Query category: </label>
+                        <select id="id-category" name="category" value={this.state.category} onChange={this.handleCategoryChange}>
+                            <option value="website">Website issue</option>
+                            <option value="order">Order issue</option>
+                            <option value="general">General inquiry</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label htmlFor="id-comments">Comments: </label>
+                        <textarea id="id-comments" name="comments" value={this.state.comments} onChange={this.handleCommentsChange} />
+                    </div>
                     <input type="submit" value="Submit" />
                 </form>
             </div>
