@@ -15,6 +15,7 @@ import LifeCyclesCDM from './components/LifeCyclesCDM';
 import LifeCyclesCDU from './components/LifeCyclesCDU';
 import LifeCyclesCWU from './components/LifeCyclesCWU';
 import ControlledForms from './components/ControlledForms';
+import UncontrolledForms from './components/UncontrolledForms';
 
 // 4. Use functional/class component
 // 5.0 Pass in prop (name, greeting, age) as JSX
@@ -34,8 +35,9 @@ function App() {
       <RenderingLists />
       <LifeCyclesCDM />
       <LifeCyclesCDU />
-      <LifeCyclesCWU /> */}
-      <ControlledForms />
+      <LifeCyclesCWU />
+      <ControlledForms />*/}
+      <UncontrolledForms />
     </div>
   );
 }
