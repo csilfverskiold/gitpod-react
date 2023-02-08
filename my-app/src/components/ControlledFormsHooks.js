@@ -1,5 +1,5 @@
 // Hooks in React
-// Showcasing useState()
+// Showcasing useState() in a funtional component
 
 import React, {useState} from 'react'
 

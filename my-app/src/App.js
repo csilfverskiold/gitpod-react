@@ -18,6 +18,7 @@ import ControlledForms from './components/ControlledForms';
 import UncontrolledForms from './components/UncontrolledForms';
 import SearchBar from './components/SearchBar';
 import ControlledFormsHooks from './components/ControlledFormsHooks';
+import UseStateWithArrays from './components/UseStateWithArrays';
 
 // 4. Use functional/class component
 // 5.0 Pass in prop (name, greeting, age) as JSX
@@ -40,8 +41,9 @@ function App() {
       <LifeCyclesCWU />
       <ControlledForms />
       <UncontrolledForms />
-      <SearchBar /> */}
-      <ControlledFormsHooks />
+      <SearchBar />
+      <ControlledFormsHooks /> */}
+      <UseStateWithArrays />
     </div>
   );
 }
