@@ -16,6 +16,7 @@ import LifeCyclesCDU from './components/LifeCyclesCDU';
 import LifeCyclesCWU from './components/LifeCyclesCWU';
 import ControlledForms from './components/ControlledForms';
 import UncontrolledForms from './components/UncontrolledForms';
+import SearchBar from './components/SearchBar';
 
 // 4. Use functional/class component
 // 5.0 Pass in prop (name, greeting, age) as JSX
@@ -36,8 +37,9 @@ function App() {
       <LifeCyclesCDM />
       <LifeCyclesCDU />
       <LifeCyclesCWU />
-      <ControlledForms />*/}
-      <UncontrolledForms />
+      <ControlledForms />
+      <UncontrolledForms />*/}
+      <SearchBar />
     </div>
   );
 }
