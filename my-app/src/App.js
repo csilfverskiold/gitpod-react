@@ -20,6 +20,7 @@ import SearchBar from './components/SearchBar';
 import ControlledFormsHooks from './components/ControlledFormsHooks';
 import UseStateWithArrays from './components/UseStateWithArrays';
 import UseStateWithObjects from './components/UseStateWithObjects';
+import UseEffectCounter from './components/UseEffectCounter';
 
 // 4. Use functional/class component
 // 5.0 Pass in prop (name, greeting, age) as JSX
@@ -43,9 +44,10 @@ function App() {
       <ControlledForms />
       <UncontrolledForms />
       <SearchBar />
-      <ControlledFormsHooks /> */}
+      <ControlledFormsHooks />
       <UseStateWithArrays />
-      <UseStateWithObjects />
+      <UseStateWithObjects /> */}
+      <UseEffectCounter />
     </div>
   );
 }
