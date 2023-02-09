@@ -23,6 +23,7 @@ import UseStateWithObjects from './components/UseStateWithObjects';
 import UseEffectCounter from './components/UseEffectCounter';
 import HTTPRequests from './components/HTTPRequests';
 import HTTPPost from './components/HTTPPost';
+import HTTPHooks from './components/HTTPHooks';
 
 // 4. Use functional/class component
 // 5.0 Pass in prop (name, greeting, age) as JSX
@@ -49,9 +50,10 @@ function App() {
       <ControlledFormsHooks />
       <UseStateWithArrays />
       <UseStateWithObjects />
-      <UseEffectCounter /> */}
+      <UseEffectCounter />
       <HTTPRequests />
-      <HTTPPost />
+      <HTTPPost /> */}
+      <HTTPHooks />
 
     </div>
   );
