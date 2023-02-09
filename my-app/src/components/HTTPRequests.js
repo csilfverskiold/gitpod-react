@@ -6,31 +6,69 @@ import axios from 'axios'
 
 export class HTTPRequests extends Component {
     constructor(props) {
-      super(props)
-    
-      this.state = {
-         posts: []
-      }
+        super(props)
+
+        this.state = {
+            posts: [],
+            error: null
+        }
     }
 
-    componentDidMount(){
-        axios.get('https://jsonplaceholder.typicode.com/posts')
-        .then(response => {
-            console.log(response)
-            this.setState({
-                posts: response.data
+    componentDidMount() {
+        axios.get('https://jsonplaceholder.typicode.com/posts/999999')
+            .then(response => {
+                console.log(response)
+                this.setState({
+                    posts: Array.isArray(response.data)
+                        ? response.data
+                        : [response.data]
+                })
+                    })
+                    .catch(error => {
+                        this.setState({
+                            error: error.message
+                        })
             })
-        })
     }
-  render() {
-    return (
-      <div>
-        <h2>Posts: </h2>
-        {JSON.stringify(this.state.posts)}
-      </div>
-    )
-  }
+
+    // "We need to somehow  check when the response comes back  
+    // whether the data property is an array,  and then update the state accordingly.
+    // The easiest way to do this is to just use the  built in isArray() method from JavaScript.
+    // So here let’s adjust our setState call to  say if response.data is already an array,  
+    // then we will just set posts  equal to response.data,  
+    // and otherwise, we’ll manually set it equal  to an array containing response.data,  
+    // because we know that response.data will be an  object. By doing this, whether you request all  
+    // posts, or a specific post, the state end  up containing an array of post objects.
+    // With all this done, I can freely update the  URL in the GET request to get any post ID."
+
+    render() {
+        const posts = this.state.posts;
+        return (
+            <div>
+                <h2>Posts:</h2>
+                {/* Commenting out to shorten with const above */}
+                {/* {JSON.stringify(this.state.posts)} */}
+                {
+                    posts.length ? (
+                        posts.map(post => (
+                            <div key={post.id}>
+                                <h2>{post.id}. {post.title}</h2>
+                                <h4>By User ID {post.userId}</h4>
+                                <p>{post.body}</p>
+                                <hr />
+                            </div>
+                        ))
+                    ) : (
+                        this.state.error
+                            ? <p>{this.state.error}</p>
+                            : <h4>Loading posts ...</h4>
+                    )
+                }
+            </div>
+        )
+    }
 }
+
 
 export default HTTPRequests
 
